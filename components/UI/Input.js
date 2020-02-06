@@ -30,6 +30,7 @@ const Input = props => {
   });
 
   const { onInputChange, id } = props;
+
   useEffect(() => {
     if (inputState.touched) {
       onInputChange(id, inputState.value, inputState.isValid);
@@ -93,7 +94,6 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     borderBottomColor: "#ccc",
     borderBottomWidth: 1
-    // marginBottom: 24
   },
   errorContainer: {
     marginVertical: 5
